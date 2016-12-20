@@ -1,3 +1,4 @@
+const assign = require('lodash/assign');
 const common = require('./webpack.config.common');
 const path = require('path');
 
@@ -9,19 +10,24 @@ module.exports = {
     library: 'ReactJQuerySortable',
     libraryTarget: 'umd',
   },
-  externals: {
+  externals: assign({
     react: {
       root: 'React',
       commonjs2: 'react',
       commonjs: 'react',
       amd: 'react',
     },
-  },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom',
+    },
+  }, common.externals),
   resolve: common.resolve,
   module: {
     loaders: [
       common.module.loaders.js,
     ],
   },
-  externals: common.externals,
 };
