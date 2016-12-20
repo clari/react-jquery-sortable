@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "$": false
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "max-len": 0,
+    "new-cap": 0,
+    "no-trailing-spaces": 0,
+    "react/no-find-dom-node": 0
+  }
+}

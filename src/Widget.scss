@@ -1,0 +1,29 @@
+@import './common';
+
+.handle {
+  background-color: rgba(gray,0.5);
+  cursor: grab;
+  flex-shrink: 0;
+  height: 30px;
+  width: 30px;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.name {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.widget {
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
