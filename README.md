@@ -29,7 +29,7 @@ function Example({ onChange, widgets, ...props }) {
       {widgets.map(widget => (
         <Widget
           handleClassName=".handle"
-          id={widget.get('id')}z
+          id={widget.get('id')}
           key={widget.get('id')}
           widget={widget}
         />
